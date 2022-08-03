@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <%- include('../partials/head'); %>
+        <script>
+            function myFunction(){
+                console.log("hello")
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <%- include('../partials/header'); %>
+            <%- include('../partials/links'); %>
+            <%- include('../partials/banner'); %> 
+            <%- include('../partials/message'); %>       
+            <div>
+                <%- body %>
+            </div>
+        </div>
+    </body>
+</html>

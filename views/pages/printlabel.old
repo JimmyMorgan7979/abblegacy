@@ -1,0 +1,50 @@
+<html lang='en'>
+    <head>
+        <style>
+            table,th,td,tr {
+                border-collapse:collapse;
+            }
+            body{
+                padding-top:15px;                
+            }
+            td{
+                font-size:15px;
+            }
+            th{
+                font-size:17px;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:270px; height:130px; ">
+            <tr>
+                <td style="text-align:left"><small>LV</small></td>
+                <td></td>
+                <td><small><%= new Intl.DateTimeFormat('en-US', { year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date()) %></small></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th style="text-align:center;"><%=printinfo.sapNumber%></th>
+            </tr>
+                <td></td>
+                <td style="text-align:center;" class="bcode">*<%=printinfo.sapNumber%>*</td>
+            <tr>
+                <td></td>
+                <th style="text-align:center;"><%=printinfo.stockedAS%></th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td style="text-align:center;"><small><%=printinfo.description1%></small></td>
+            </tr>
+
+            <tr>
+                <td style="text-align:left;"><small>Loc: <%=printinfo.location1%></small></td>
+                <td></td>
+                <td><small>Drawer: <%=printinfo.drawer%></small></td>
+            </tr>
+
+        </table>
+    </body>
+</html>
