@@ -57,7 +57,8 @@ router.post('/partAdd', function(req,res){
         cross2: partInfo.cross2,
         cross3: partInfo.cross3,
         price: partInfo.price,
-        notes: partInfo.notes
+        notes: partInfo.notes,
+        priceUpdated: partInfo.priceUpdated
     });
     newPart.save(function(err,Part){
         if(err)
